@@ -1,0 +1,15 @@
+Description du modèle de sélection.
+But : déterminer quelles sont les colonnes et les lignes sélectionnées.
+Comment : l'utilisateur postionne la souris sur la vue.
+	= Déterminer si il est postionné sur le header des colonnes , le header des lignes, une donnée ou le "coin".
+
+Comment calculer la position de la souris :
+	- Rechercher la cellule choisie (Filter spécifique avec Xmouse,Ymouse, X,Y header.  en paramètre)
+		=> renvoie la cellule sélectionnée si elle existe.
+		=> conservé dans le sélection model.
+		= Possibilité de sélectionné plusieurs cellules en même temps pour export excel par exemple.
+		=> distinction d'un simple focus d'une vrai sélection !
+		
+On travaille sur le focus dans un premier temps pour comprendre le calcul des coordonnées.
+Focus affcihé dans un layer spécifique.
+			
